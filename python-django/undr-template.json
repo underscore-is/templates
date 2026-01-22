@@ -1,0 +1,23 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "python-django",
+  "name": "Python Django",
+  "description": "Build a web app with Django in Python",
+  "bootstrap": {
+    "requires": ["python"],
+    "files": "app"
+  },
+  "workspace": {
+    "scripts": {
+      "install": "pip install -r requirements.txt",
+      "dev": "python manage.py runserver 0.0.0.0:8000",
+      "build": "echo 'No build step required'"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev",
+      "port": 8000
+    },
+    "openFiles": ["manage.py"]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "scripts": {
+    "install": "dart pub get",
+    "dev": "dart run bin/server.dart",
+    "build": "dart compile exe bin/server.dart"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev",
+    "port": 8080
+  },
+  "openFiles": ["bin/server.dart"]
+}

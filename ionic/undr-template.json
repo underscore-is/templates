@@ -1,0 +1,25 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "ionic",
+  "name": "Ionic",
+  "description": "Build cross-platform mobile apps with Ionic and Angular",
+  "bootstrap": {
+    "requires": ["nodejs"],
+    "commands": [
+      "npx -y @ionic/cli start . blank --type angular --no-git --no-deps",
+      "npm install --package-lock-only --ignore-scripts"
+    ]
+  },
+  "workspace": {
+    "scripts": {
+      "install": "npm ci --no-audit --prefer-offline",
+      "dev": "npx ionic serve --host 0.0.0.0",
+      "build": "npm run build"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev"
+    },
+    "openFiles": ["src/app/home/home.page.ts"]
+  }
+}

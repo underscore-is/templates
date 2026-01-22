@@ -1,0 +1,25 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "rust",
+  "name": "Rust",
+  "description": "Build a CLI or application with Rust",
+  "bootstrap": {
+    "requires": ["rust"],
+    "commands": [
+      "cargo init ."
+    ]
+  },
+  "workspace": {
+    "scripts": {
+      "install": "cargo fetch",
+      "dev": "cargo run",
+      "build": "cargo build --release",
+      "test": "cargo test"
+    },
+    "preview": {
+      "type": "terminal",
+      "command": "dev"
+    },
+    "openFiles": ["src/main.rs"]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "php",
+  "name": "PHP",
+  "description": "Build an API server with PHP",
+  "bootstrap": {
+    "requires": ["php"],
+    "files": "app"
+  },
+  "workspace": {
+    "scripts": {
+      "install": "echo 'No install step required'",
+      "dev": "php -S 0.0.0.0:8080",
+      "build": "echo 'No build step required'"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev",
+      "port": 8080
+    },
+    "openFiles": ["index.php"]
+  }
+}

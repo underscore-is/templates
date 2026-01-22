@@ -1,0 +1,15 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "template": "cpp",
+  "scripts": {
+    "install": "cmake -B build && cmake --build build",
+    "dev": "./build/app",
+    "build": "cmake --build build --config Release"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev",
+    "port": 8080
+  },
+  "openFiles": ["cloud_run_hello.cc"]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "node-express",
+  "name": "Node Express",
+  "description": "Build a backend API using Express.js in Node",
+  "params": [
+    {
+      "id": "language",
+      "name": "Language",
+      "type": "enum",
+      "default": "ts",
+      "options": {
+        "js": "JavaScript",
+        "ts": "TypeScript"
+      }
+    }
+  ],
+  "bootstrap": {
+    "requires": ["nodejs"],
+    "files": "{{language == 'ts' ? 'api-ts' : 'api'}}"
+  },
+  "workspace": {
+    "scripts": {
+      "install": "npm ci --no-audit --prefer-offline",
+      "dev": "npm run dev",
+      "build": "npm run build"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev",
+      "port": 3000
+    },
+    "openFiles": ["src/index.ts", "index.js"]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "nuxt",
+  "name": "Nuxt",
+  "description": "Create a Vue.js app with Nuxt framework",
+  "bootstrap": {
+    "requires": ["nodejs"],
+    "commands": [
+      "npx -y giget@latest gh:nuxt/starter#v3 . --force",
+      "npm install --package-lock-only --ignore-scripts"
+    ]
+  },
+  "workspace": {
+    "scripts": {
+      "install": "npm ci --no-audit --prefer-offline",
+      "dev": "npm run dev -- --host 0.0.0.0",
+      "build": "npm run build"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev"
+    },
+    "openFiles": ["app/app.vue"]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "scripts": {
+    "install": "npm ci --no-audit --prefer-offline",
+    "dev": "npm run start -- --host 0.0.0.0",
+    "build": "npm run build"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev"
+  },
+  "openFiles": ["src/app/app.component.ts"]
+}

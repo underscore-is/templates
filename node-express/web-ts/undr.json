@@ -1,0 +1,14 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "scripts": {
+    "install": "npm ci --no-audit --prefer-offline",
+    "dev": "npx ts-node index.ts",
+    "build": "npx tsc"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev",
+    "port": 3000
+  },
+  "openFiles": ["index.ts", "views/index.ejs"]
+}

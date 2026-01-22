@@ -1,0 +1,14 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "template": "postgres",
+  "scripts": {
+    "install": "echo 'No install step required'",
+    "dev": "echo 'Connect to postgres and run SQL files'",
+    "build": "echo 'No build step required'"
+  },
+  "preview": {
+    "type": "terminal",
+    "command": "dev"
+  },
+  "openFiles": ["create.sql", "example.sql"]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "template": "python-django",
+  "scripts": {
+    "install": "pip install -r mysite/requirements.txt",
+    "dev": "python mysite/manage.py runserver 0.0.0.0:8000",
+    "build": "echo 'No build step required'"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev",
+    "port": 8000
+  },
+  "openFiles": ["mysite/manage.py", "mysite/mysite/urls.py"]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "scripts": {
+    "install": "poetry install",
+    "dev": "./devserver.sh",
+    "build": "echo 'No build step required'"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev",
+    "port": 5000
+  },
+  "openFiles": ["src/main.py", "src/index.html"]
+}

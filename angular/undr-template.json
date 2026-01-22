@@ -1,0 +1,25 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "angular",
+  "name": "Angular",
+  "description": "Create a new Angular app in TypeScript built with ng-cli",
+  "bootstrap": {
+    "requires": ["nodejs"],
+    "commands": [
+      "npx -y @angular/cli new --skip-git --defaults --skip-install --directory . app",
+      "npm install --package-lock-only --ignore-scripts"
+    ]
+  },
+  "workspace": {
+    "scripts": {
+      "install": "npm ci --no-audit --prefer-offline",
+      "dev": "npm run start -- --host 0.0.0.0",
+      "build": "npm run build"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev"
+    },
+    "openFiles": ["src/app/app.component.ts"]
+  }
+}

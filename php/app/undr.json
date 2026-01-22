@@ -1,0 +1,15 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "template": "php",
+  "scripts": {
+    "install": "echo 'No install step required'",
+    "dev": "php -S 0.0.0.0:8080",
+    "build": "echo 'No build step required'"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev",
+    "port": 8080
+  },
+  "openFiles": ["index.php"]
+}

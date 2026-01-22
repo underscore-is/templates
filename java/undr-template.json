@@ -1,0 +1,23 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "java",
+  "name": "Java",
+  "description": "Build an API server with Spring and Java",
+  "bootstrap": {
+    "requires": ["java"],
+    "files": "app"
+  },
+  "workspace": {
+    "scripts": {
+      "install": "./mvnw dependency:resolve",
+      "dev": "./mvnw spring-boot:run",
+      "build": "./mvnw package"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev",
+      "port": 8080
+    },
+    "openFiles": ["src/main/java/com/example/demo/DemoApplication.java"]
+  }
+}

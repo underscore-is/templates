@@ -1,0 +1,50 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "nextjs",
+  "name": "Next.js",
+  "description": "Create a new full-stack NextJS app with server-side rendering",
+  "params": [
+    {
+      "id": "language",
+      "name": "Language",
+      "type": "enum",
+      "default": "ts",
+      "options": {
+        "js": "JavaScript",
+        "ts": "TypeScript"
+      }
+    },
+    {
+      "id": "tailwind",
+      "name": "Use Tailwind CSS",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "id": "app",
+      "name": "Use App Router",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "bootstrap": {
+    "requires": ["nodejs"],
+    "commands": [
+      "npx create-next-app@latest . --yes --skip-install --{{language}} {{tailwind ? '--tailwind' : '--no-tailwind'}} {{app ? '--app' : '--no-app'}} --no-eslint",
+      "npm install --package-lock-only --ignore-scripts"
+    ]
+  },
+  "workspace": {
+    "scripts": {
+      "install": "npm ci --no-audit --prefer-offline",
+      "dev": "npm run dev -- --hostname 0.0.0.0",
+      "build": "npm run build",
+      "start": "npm run start"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev"
+    },
+    "openFiles": ["app/page.tsx", "app/page.js", "src/app/page.tsx", "pages/index.tsx"]
+  }
+}

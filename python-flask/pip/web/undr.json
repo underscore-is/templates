@@ -1,0 +1,15 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "template": "python-flask",
+  "scripts": {
+    "install": "pip install -r requirements.txt",
+    "dev": "./devserver.sh",
+    "build": "echo 'No build step required'"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev",
+    "port": 5000
+  },
+  "openFiles": ["main.py", "src/index.html"]
+}

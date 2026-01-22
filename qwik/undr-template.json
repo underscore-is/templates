@@ -1,0 +1,25 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "qwik",
+  "name": "Qwik",
+  "description": "Build instant-loading web apps with Qwik",
+  "bootstrap": {
+    "requires": ["nodejs"],
+    "commands": [
+      "npm create qwik@latest playground . --force",
+      "npm install --package-lock-only --ignore-scripts"
+    ]
+  },
+  "workspace": {
+    "scripts": {
+      "install": "npm ci --no-audit --prefer-offline",
+      "dev": "npm run dev -- --host 0.0.0.0",
+      "build": "npm run build"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev"
+    },
+    "openFiles": ["src/routes/index.tsx"]
+  }
+}

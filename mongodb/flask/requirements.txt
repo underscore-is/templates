@@ -1,0 +1,4 @@
+pip
+Flask==3.1.2
+pymongo
+Flask-PyMongo

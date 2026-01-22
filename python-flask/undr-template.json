@@ -1,0 +1,35 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "python-flask",
+  "name": "Python Flask",
+  "description": "Build a web backend with Flask in Python",
+  "params": [
+    {
+      "id": "type",
+      "name": "Project Type",
+      "type": "enum",
+      "default": "api",
+      "options": {
+        "api": "API Server",
+        "web": "Web Server"
+      }
+    }
+  ],
+  "bootstrap": {
+    "requires": ["python"],
+    "files": "pip/{{type}}"
+  },
+  "workspace": {
+    "scripts": {
+      "install": "pip install -r requirements.txt",
+      "dev": "./devserver.sh",
+      "build": "echo 'No build step required'"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev",
+      "port": 5000
+    },
+    "openFiles": ["main.py", "src/main.py"]
+  }
+}

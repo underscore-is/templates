@@ -1,0 +1,25 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "remix",
+  "name": "React Router",
+  "description": "Build a full-stack web app with React Router (formerly Remix)",
+  "bootstrap": {
+    "requires": ["nodejs"],
+    "commands": [
+      "npx -y create-react-router@latest . --yes --no-git-init --no-install",
+      "npm install --package-lock-only --ignore-scripts"
+    ]
+  },
+  "workspace": {
+    "scripts": {
+      "install": "npm ci --no-audit --prefer-offline",
+      "dev": "npm run dev -- --host 0.0.0.0",
+      "build": "npm run build"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev"
+    },
+    "openFiles": ["app/root.tsx", "app/routes/home.tsx"]
+  }
+}

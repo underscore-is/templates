@@ -1,0 +1,13 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "scripts": {
+    "install": "npm ci --no-audit --prefer-offline",
+    "dev": "npx react-native start",
+    "build": "echo 'Use npx react-native run-android or run-ios'"
+  },
+  "preview": {
+    "type": "terminal",
+    "command": "dev"
+  },
+  "openFiles": ["App.tsx", "App.js"]
+}

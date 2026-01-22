@@ -1,0 +1,16 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "template": "java",
+  "scripts": {
+    "install": "./mvnw dependency:resolve || mvn dependency:resolve",
+    "dev": "./mvnw spring-boot:run || mvn spring-boot:run",
+    "build": "./mvnw package || mvn package",
+    "test": "./mvnw test || mvn test"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev",
+    "port": 8080
+  },
+  "openFiles": ["src/main/java/com/example/demo/DemoApplication.java"]
+}

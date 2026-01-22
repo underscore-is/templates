@@ -1,0 +1,15 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "template": "go",
+  "scripts": {
+    "install": "go mod tidy",
+    "dev": "go run .",
+    "build": "go build -o app ."
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev",
+    "port": 8080
+  },
+  "openFiles": ["server.go"]
+}

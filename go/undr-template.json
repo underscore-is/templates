@@ -1,0 +1,35 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "go",
+  "name": "Go",
+  "description": "Build a backend or a full-stack app in Go",
+  "params": [
+    {
+      "id": "type",
+      "name": "Project Type",
+      "type": "enum",
+      "default": "api",
+      "options": {
+        "api": "API Server",
+        "web": "Web Server"
+      }
+    }
+  ],
+  "bootstrap": {
+    "requires": ["go"],
+    "files": "{{type}}"
+  },
+  "workspace": {
+    "scripts": {
+      "install": "go mod tidy",
+      "dev": "go run .",
+      "build": "go build -o app ."
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev",
+      "port": 8080
+    },
+    "openFiles": ["main.go"]
+  }
+}

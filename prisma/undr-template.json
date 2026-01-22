@@ -1,0 +1,35 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "prisma",
+  "name": "Prisma",
+  "description": "Serverless PostgreSQL with type-safe ORM, caching and real-time",
+  "params": [
+    {
+      "id": "database",
+      "name": "Database",
+      "type": "enum",
+      "default": "sqlite",
+      "options": {
+        "sqlite": "SQLite",
+        "postgres": "PostgreSQL"
+      }
+    }
+  ],
+  "bootstrap": {
+    "requires": ["nodejs"],
+    "files": "{{database == 'sqlite' ? 'app-sqlite' : 'app-ppg'}}"
+  },
+  "workspace": {
+    "scripts": {
+      "install": "npm ci && npx prisma generate",
+      "dev": "npm run dev",
+      "build": "npm run build"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev",
+      "port": 3000
+    },
+    "openFiles": ["prisma/schema.prisma", "src/index.ts"]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "ruby",
+  "name": "Ruby",
+  "description": "Build an API server with Ruby and Sinatra",
+  "bootstrap": {
+    "requires": ["ruby"],
+    "files": "app"
+  },
+  "workspace": {
+    "scripts": {
+      "install": "bundle install",
+      "dev": "ruby app.rb",
+      "build": "echo 'No build step required'"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev",
+      "port": 4567
+    },
+    "openFiles": ["app.rb"]
+  }
+}

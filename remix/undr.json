@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "install": "npm ci --no-audit --prefer-offline",
+    "dev": "npm run dev -- --host 0.0.0.0",
+    "build": "npm run build"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev"
+  },
+  "openFiles": ["app/root.tsx", "app/routes/home.tsx"]
+}

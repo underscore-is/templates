@@ -1,0 +1,15 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "template": "ruby",
+  "scripts": {
+    "install": "bundle install",
+    "dev": "ruby app.rb",
+    "build": "echo 'No build step required'"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev",
+    "port": 4567
+  },
+  "openFiles": ["app.rb"]
+}

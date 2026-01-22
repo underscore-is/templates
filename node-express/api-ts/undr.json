@@ -1,0 +1,15 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "template": "node-express",
+  "scripts": {
+    "install": "npm ci --no-audit --prefer-offline",
+    "dev": "npm run dev",
+    "build": "npm run build"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev",
+    "port": 3000
+  },
+  "openFiles": ["src/index.ts"]
+}

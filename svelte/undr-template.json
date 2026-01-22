@@ -1,0 +1,37 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "svelte",
+  "name": "Svelte",
+  "description": "Create a new Svelte app with Vite",
+  "params": [
+    {
+      "id": "language",
+      "name": "Language",
+      "type": "enum",
+      "default": "ts",
+      "options": {
+        "js": "JavaScript",
+        "ts": "TypeScript"
+      }
+    }
+  ],
+  "bootstrap": {
+    "requires": ["nodejs"],
+    "commands": [
+      "npm create -y vite@latest . -- --template {{language == 'ts' ? 'svelte-ts' : 'svelte'}}",
+      "npm install --package-lock-only --ignore-scripts"
+    ]
+  },
+  "workspace": {
+    "scripts": {
+      "install": "npm ci --no-audit --prefer-offline",
+      "dev": "npm run dev -- --host 0.0.0.0",
+      "build": "npm run build"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev"
+    },
+    "openFiles": ["src/App.svelte"]
+  }
+}

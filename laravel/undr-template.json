@@ -1,0 +1,25 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "laravel",
+  "name": "Laravel",
+  "description": "Build a web application with Laravel and PHP",
+  "bootstrap": {
+    "requires": ["php", "composer"],
+    "commands": [
+      "composer create-project laravel/laravel . --no-interaction"
+    ]
+  },
+  "workspace": {
+    "scripts": {
+      "install": "composer install",
+      "dev": "php artisan serve --host=0.0.0.0",
+      "build": "echo 'No build step required'"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev",
+      "port": 8000
+    },
+    "openFiles": ["routes/web.php"]
+  }
+}

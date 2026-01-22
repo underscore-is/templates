@@ -1,0 +1,14 @@
+{
+  "$schema": "https://underscore.is/schemas/undr.json",
+  "scripts": {
+    "install": "npm ci --no-audit --prefer-offline",
+    "dev": "node index.js",
+    "build": "echo 'No build step required'"
+  },
+  "preview": {
+    "type": "web",
+    "command": "dev",
+    "port": 3000
+  },
+  "openFiles": ["index.js", "views/index.ejs"]
+}

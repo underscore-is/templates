@@ -1,0 +1,25 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "dart",
+  "name": "Dart",
+  "description": "Build an API server with Dart",
+  "bootstrap": {
+    "requires": ["dart"],
+    "commands": [
+      "dart create -t server-shelf ."
+    ]
+  },
+  "workspace": {
+    "scripts": {
+      "install": "dart pub get",
+      "dev": "dart run bin/server.dart",
+      "build": "dart compile exe bin/server.dart"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev",
+      "port": 8080
+    },
+    "openFiles": ["bin/server.dart"]
+  }
+}

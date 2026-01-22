@@ -1,0 +1,35 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "mongodb",
+  "name": "MongoDB",
+  "description": "MongoDB starter kit with Node, Express, and Flask API templates",
+  "params": [
+    {
+      "id": "backend",
+      "name": "Backend Framework",
+      "type": "enum",
+      "default": "express",
+      "options": {
+        "express": "Node.js + Express",
+        "flask": "Python + Flask"
+      }
+    }
+  ],
+  "bootstrap": {
+    "requires": ["nodejs", "mongodb"],
+    "files": "{{backend}}"
+  },
+  "workspace": {
+    "scripts": {
+      "install": "npm ci --no-audit --prefer-offline",
+      "dev": "npm run dev",
+      "build": "echo 'No build step required'"
+    },
+    "preview": {
+      "type": "web",
+      "command": "dev",
+      "port": 3000
+    },
+    "openFiles": ["index.js", "app.py"]
+  }
+}

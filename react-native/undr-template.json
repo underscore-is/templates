@@ -1,0 +1,25 @@
+{
+  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "id": "react-native",
+  "name": "React Native",
+  "description": "Build a mobile app with React Native",
+  "bootstrap": {
+    "requires": ["nodejs"],
+    "commands": [
+      "npx react-native init App --directory . --skip-git-init --skip-install",
+      "npm install --package-lock-only --ignore-scripts"
+    ]
+  },
+  "workspace": {
+    "scripts": {
+      "install": "npm ci --no-audit --prefer-offline",
+      "dev": "npx react-native start",
+      "build": "echo 'Use npx react-native run-android or run-ios'"
+    },
+    "preview": {
+      "type": "terminal",
+      "command": "dev"
+    },
+    "openFiles": ["App.tsx", "App.js"]
+  }
+}
