@@ -1,5 +1,5 @@
 {
-  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "$schema": "https://app.underscore.is/schemas/undr-template.json",
   "id": "preact",
   "name": "Preact",
   "description": "Create a web app with Preact and Vite",

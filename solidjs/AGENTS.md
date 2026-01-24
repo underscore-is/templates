@@ -10,7 +10,7 @@ This project is a front-end application built with SolidJS and TypeScript, using
 
 ## 3. Workspace Configuration
 
-**Check `undr.json` in the project root for available scripts and commands:**
+**Check `.underscore/undr.json` in the project for available scripts and commands:**
 - `scripts.install` - Command to install dependencies (MUST run before dev)
 - `scripts.dev` - Command to start the development server
 - `scripts.build` - Command to build for production
@@ -19,7 +19,7 @@ This project is a front-end application built with SolidJS and TypeScript, using
 
 **IMPORTANT: Before running the dev server, you MUST first run the install command to install dependencies.**
 
-If `undr.json` is missing, use these defaults:
+If `.underscore/undr.json` is missing, use these defaults:
 ```json
 {
   "scripts": {
@@ -46,7 +46,7 @@ After bootstrap, the project should have this structure:
 ├── package.json         # Dependencies (includes solid-js, vite, vite-plugin-solid)
 ├── vite.config.ts       # Vite configuration with Solid plugin
 ├── tsconfig.json        # TypeScript configuration
-├── undr.json            # Workspace scripts and config
+├── .underscore/           # Workspace config folder            # Workspace scripts and config
 └── AGENTS.md            # This file
 ```
 
@@ -64,14 +64,14 @@ After bootstrap, the project should have this structure:
 This project runs in an Underscore.is cloud environment with:
 - **Runtime:** Node.js 20
 - **Package Manager:** npm
-- **Scripts:** See `undr.json` for available commands
+- **Scripts:** See `.underscore/undr.json` for available commands
 
 ## 6. Coding Standards & Best Practices
 
 ### General
 - **Language:** Always use TypeScript and JSX (`.tsx` files).
 - **Styling:** Use standard CSS or CSS Modules for scoped styles.
-- **Dependencies:** After suggesting new dependencies, remind the user to run the install command from `undr.json`.
+- **Dependencies:** After suggesting new dependencies, remind the user to run the install command from `.underscore/undr.json`.
 
 ### SolidJS Specific
 - **Reactivity:** Embrace SolidJS's reactivity model:
@@ -129,7 +129,7 @@ export function TodoList(props: Props) {
 ## 7. Interaction Guidelines
 
 - Before making changes, verify the project structure exists as expected
-- Check `undr.json` for the correct commands to run (install, dev, build)
+- Check `.underscore/undr.json` for the correct commands to run (install, dev, build)
 - If files are missing, help the user bootstrap the project first
 - Provide complete `.tsx` file content when creating components
 - Explain SolidJS-specific patterns that differ from React

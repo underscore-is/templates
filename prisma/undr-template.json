@@ -1,5 +1,5 @@
 {
-  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "$schema": "https://app.underscore.is/schemas/undr-template.json",
   "id": "prisma",
   "name": "Prisma",
   "description": "Serverless PostgreSQL with type-safe ORM, caching and real-time",

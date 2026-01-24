@@ -1,5 +1,5 @@
 {
-  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "$schema": "https://app.underscore.is/schemas/undr-template.json",
   "id": "python-django",
   "name": "Python Django",
   "description": "Build a web app with Django in Python",

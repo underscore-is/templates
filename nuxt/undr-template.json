@@ -1,5 +1,5 @@
 {
-  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "$schema": "https://app.underscore.is/schemas/undr-template.json",
   "id": "nuxt",
   "name": "Nuxt",
   "description": "Create a Vue.js app with Nuxt framework",

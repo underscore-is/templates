@@ -1,5 +1,5 @@
 {
-  "$schema": "https://underscore.is/schemas/undr.json",
+  "$schema": "https://app.underscore.is/schemas/undr.json",
   "scripts": {
     "install": "composer install",
     "dev": "php artisan serve --host=0.0.0.0",

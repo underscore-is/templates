@@ -1,5 +1,5 @@
 {
-  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "$schema": "https://app.underscore.is/schemas/undr-template.json",
   "id": "ruby",
   "name": "Ruby",
   "description": "Build an API server with Ruby and Sinatra",

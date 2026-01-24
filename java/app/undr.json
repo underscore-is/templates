@@ -1,5 +1,5 @@
 {
-  "$schema": "https://underscore.is/schemas/undr.json",
+  "$schema": "https://app.underscore.is/schemas/undr.json",
   "template": "java",
   "scripts": {
     "install": "./mvnw dependency:resolve || mvn dependency:resolve",

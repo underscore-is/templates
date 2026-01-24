@@ -1,5 +1,5 @@
 {
-  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "$schema": "https://app.underscore.is/schemas/undr-template.json",
   "id": "svelte",
   "name": "Svelte",
   "description": "Create a new Svelte app with Vite",

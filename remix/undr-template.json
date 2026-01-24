@@ -1,5 +1,5 @@
 {
-  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "$schema": "https://app.underscore.is/schemas/undr-template.json",
   "id": "remix",
   "name": "React Router",
   "description": "Build a full-stack web app with React Router (formerly Remix)",

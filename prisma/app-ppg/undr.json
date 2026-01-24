@@ -1,5 +1,5 @@
 {
-  "$schema": "https://underscore.is/schemas/undr.json",
+  "$schema": "https://app.underscore.is/schemas/undr.json",
   "scripts": {
     "install": "npm ci && npx prisma generate",
     "dev": "npx ts-node src/queries.ts",

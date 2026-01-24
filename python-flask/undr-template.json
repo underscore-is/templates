@@ -1,5 +1,5 @@
 {
-  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "$schema": "https://app.underscore.is/schemas/undr-template.json",
   "id": "python-flask",
   "name": "Python Flask",
   "description": "Build a web backend with Flask in Python",

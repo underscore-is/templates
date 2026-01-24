@@ -1,5 +1,5 @@
 {
-  "$schema": "https://underscore.is/schemas/undr-template.json",
+  "$schema": "https://app.underscore.is/schemas/undr-template.json",
   "id": "nextjs",
   "name": "Next.js",
   "description": "Create a new full-stack NextJS app with server-side rendering",

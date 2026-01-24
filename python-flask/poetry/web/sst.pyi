@@ -3,18 +3,9 @@
 from typing import Any
 
 class Resource:
-    class AgentOrchestrator:
-        type: str
-        url: str
-    class Api:
-        type: str
-        url: str
     class App:
         name: str
         stage: str
-    class AuthApi:
-        type: str
-        url: str
     class AuthStorage:
         namespaceId: str
         type: str
@@ -24,6 +15,9 @@ class Resource:
     class Database:
         databaseId: str
         type: str
+    class GOOGLE_CLIENT_ID:
+        type: str
+        value: str
     class GatewayKv:
         namespaceId: str
         type: str
